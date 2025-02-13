@@ -1,0 +1,88 @@
+.ticket-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #002129;
+    border-radius: 10px;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #00e1ff;
+  }
+  
+  .ticket-type-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-type {
+    padding: 15px;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: rgba(0, 180, 216, 0.1);
+  }
+  
+  .ticket-type:hover {
+    background-color: rgba(0, 180, 216, 0.2);
+  }
+  
+  .ticket-type.selected {
+    background-color: rgba(0, 180, 216, 0.3);
+    border-width: 2px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #00e1ff;
+  }
+  
+  .submit-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }

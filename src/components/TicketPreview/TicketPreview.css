@@ -1,0 +1,55 @@
+.ticket-preview {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #002129;
+    border-radius: 10px;
+    border: 2px solid #00b4d8;
+  }
+  
+  .ticket-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    object-fit: cover;
+    border: 3px solid #00b4d8;
+  }
+  
+  .ticket-info {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .ticket-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-email {
+    color: #00b4d8;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-type-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #00b4d8;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-details {
+    border-top: 1px solid #00b4d8;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+  }

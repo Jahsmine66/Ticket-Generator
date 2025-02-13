@@ -1,0 +1,41 @@
+
+.app-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  .app-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .app-title {
+    font-size: 32px;
+    color: #00b4d8;
+    margin-bottom: 10px;
+  }
+  
+  .app-description {
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  
+  .error-container {
+    background-color: rgba(255, 77, 77, 0.1);
+    border: 1px solid #ff4d4d;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #ff4d4d;
+  }
+  
+  .success-container {
+    background-color: rgba(0, 180, 216, 0.1);
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #00b4d8;
+  }
