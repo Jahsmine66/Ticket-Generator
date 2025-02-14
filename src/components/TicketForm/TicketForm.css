@@ -1,112 +1,150 @@
 .ticket-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #002129;
-    border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #002129;
+  border-radius: 10px;
+}
+
+.form-header {
+  background-color: #092f36;
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  border: 2px solid #32636d;
+  border-radius: 10px;
+}
+
+.form-title {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Ensure text is properly centered */
+.form-title p {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00b4d8;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #00e1ff;
+}
+
+.ticket-type-header {
+  margin-bottom: 15px;
+  color: #6d959c;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+/* Ticket selection responsive grid */
+.ticket-type-selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #00b4d8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ticket-type {
+  padding: 15px;
+  border: 1px solid #00b4d8;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgba(0, 180, 216, 0.1);
+}
+
+.ticket-type:hover {
+  background-color: rgba(0, 180, 216, 0.2);
+}
+
+.ticket-type.selected {
+  background-color: rgba(0, 180, 216, 0.3);
+  border-width: 2px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #00e1ff;
+}
+
+.submit-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .ticket-form {
+      width: 95%;
+      padding: 15px;
   }
-  
+
   .form-header {
-    background-color: #092f36;
-    text-align: center;
-    margin:  30px 0px;
-    padding: 30px 105px;
-    border: 2px solid #32636d;
-    border-radius: 10px;
+      padding: 15px;
   }
-  
+
   .form-title {
-    font-size: 26px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
+      font-size: 22px;
   }
 
-  
-
-  .form-title p {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-label {
-    display: block;
-    color: #ffffff;
-    margin-bottom: 8px;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #00b4d8;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-  }
-  
-  .form-input:focus {
-    outline: none;
-    border-color: #00e1ff;
-  }
-
-  .ticket-type-header{
-    margin-bottom: 15px;
-    color: #6d959c;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-  }
-  
   .ticket-type-selection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #00b4d8;
-    border-radius: 10px;
-    padding: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-  
+}
+
+@media (max-width: 480px) {
+  .form-title {
+      font-size: 20px;
+  }
+
+  .ticket-type-selection {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 10px;
+  }
+
   .ticket-type {
-    padding: 15px;
-    border: 1px solid #00b4d8;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s;
-    background-color: rgba(0, 180, 216, 0.1);
+      padding: 10px;
   }
-  
-  .ticket-type:hover {
-    background-color: rgba(0, 180, 216, 0.2);
-  }
-  
-  .ticket-type.selected {
-    background-color: rgba(0, 180, 216, 0.3);
-    border-width: 2px;
-  }
-  
+
   .submit-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #00b4d8;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+      padding: 10px;
+      font-size: 14px;
   }
-  
-  .submit-button:hover {
-    background-color: #00e1ff;
-  }
-  
-  .submit-button:disabled {
-    background-color: #666;
-    cursor: not-allowed;
-  }
+}
