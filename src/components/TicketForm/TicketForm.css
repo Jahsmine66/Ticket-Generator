@@ -7,14 +7,28 @@
   }
   
   .form-header {
+    background-color: #092f36;
     text-align: center;
-    margin-bottom: 30px;
+    margin:  30px 0px;
+    padding: 30px 105px;
+    border: 2px solid #32636d;
+    border-radius: 10px;
   }
   
   .form-title {
-    font-size: 24px;
+    font-size: 26px;
     color: #ffffff;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+  .form-title p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   
   .form-group {
@@ -40,12 +54,22 @@
     outline: none;
     border-color: #00e1ff;
   }
+
+  .ticket-type-header{
+    margin-bottom: 15px;
+    color: #6d959c;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
   
   .ticket-type-selection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 20px;
+    border: 1px solid #00b4d8;
+    border-radius: 10px;
+    padding: 10px;
   }
   
   .ticket-type {

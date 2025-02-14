@@ -66,8 +66,11 @@ const TicketForm = ({ onSubmit }) => {
     <form className="ticket-form" onSubmit={handleSubmit}>
       <div className="form-header">
         <h1 className="form-title">Techember Fest '25</h1>
-        <p>AsoRock, Abuja | March 15, 2025 | 7:00 PM</p>
+        <h4>Join us for an unforgetable experience at Techember! Secure your spot now</h4>
+        <p>AsoRock, Abuja || March 15, 2025 || 7:00 PM</p>
       </div>
+
+      <div className='ticket-type-header'>Select Ticket Type:</div>
 
       <div className="ticket-type-selection">
         {ticketTypes.map(type => (
@@ -76,6 +79,7 @@ const TicketForm = ({ onSubmit }) => {
             className={`ticket-type ${formData.ticketType === type.id ? 'selected' : ''}`}
             onClick={() => handleChange({ target: { name: 'ticketType', value: type.id } })}
           >
+            
             <h3>{type.label}</h3>
             <p>{type.price}</p>
           </div>
